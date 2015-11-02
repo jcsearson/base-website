@@ -1,0 +1,107 @@
+doctype default
+html(lang="en")
+
+	head
+		//- Typekit Font Request
+		include jades/typekits.jade
+		title Title
+		//- Metas
+		include jades/metas.jade
+		//- favicons
+		include jades/stylesheets.jade
+
+		body
+			section.heading
+				div.head-container
+					header(role='banner')
+						a(href='http://wiregrunt.com/' class="logo-caps") Header
+
+					nav(class="menu" role="navigation")
+						ul.nav-list
+							li.nav-item-box
+								a(href='#' tabindex="3") Nav Item 1
+							li.nav-item-box
+								a(href='#' tabindex="4") Nav Item 2
+							li.nav-item-box
+								a(href='#'  tabindex="5") Nav Item 3
+							li.nav-item-box
+								a(href='#'  tabindex="6") Nav Item 4
+							li.nav-item-box
+								a(href='#'  tabindex="6") Nav Item 5
+
+			section(class='primary' role='main')
+				section(class='primary' role='main')
+					article.blog-post-summary
+						include jades/blogpost.jade
+						div.blog-post-tags
+						a(class="media-tag-link" href="#")
+							include images/icons/svg/blog-media/svg-tag.svg
+							span.tag-link Apple
+						a(class="media-tag-link" href="#")
+							include images/icons/svg/blog-media/svg-tag.svg
+							span.tag-link El Capitan
+						a(class="media-tag-link" href="#")
+							include images/icons/svg/blog-media/svg-tag.svg
+							span.tag-link Software Updates
+						a(class="media-tag-link" href="#")
+							include images/icons/svg/blog-media/svg-tag.svg
+							span.tag-link Linux
+						div.media-share-post
+							a(class="media-share-post-link facebook-share-post" href="#")
+								include images/icons/svg/blog-media/facebook-circle.svg
+							a(class="media-share-post-link twitter-share-post" href="#")
+								include images/icons/svg/blog-media/twitter-circle.svg
+							a(class="media-share-post-link google-share-post" href="#")
+								include images/icons/svg/blog-media/google-circle.svg
+
+		footer(role='contentinfo')
+			div.foot-wrap
+				div.recent-articles-footer
+					h5.foot-widget-head Recent Articles
+					h5.foot-widget-link
+						a(href="#") Developer Nightmares
+					h5.foot-widget-link
+						a(href="#") "Fizzbuzz"
+					h5.foot-widget-link
+						a(href="#") Deploying your website
+					h5.foot-widget-link
+						a(href="#") Web Developer Self-sufficiency
+					h5.foot-widget-link
+						a(href="#") iOS Development Environment
+				div.footer-nav
+					h5.foot-widget-head Quick Links
+					h5.foot-widget-link
+						a(href="#") Articles
+					h5.foot-widget-link
+						a(href="#") Forum
+					h5.foot-widget-link
+						a(href="#") Wordpress
+					h5.foot-widget-link
+						a(href="#") Resources
+					h5.foot-widget-link
+						a(href="#") Colophan
+				div.author
+					p.author-note
+						| It all started with an idea... then a custom design...  From paper to a screen, a website came to life...  This life is curtosy of <a href='#'>Searsino</a>.
+					ul.connect-list
+						li.social-connection
+							a(href='https://www.facebook.com/jcsearson' class='social-media-anchor' target='_blank')
+								include ./images/icons/svg/footer-media/facebook.svg
+
+						li.social-connection
+							a(href='https://twitter.com/GreatSearsino' class='social-media-anchor' target='_blank')
+								include ./images/icons/svg/footer-media/twitter.svg
+
+						li.social-connection
+							a(href='https://www.linkedin.com/in/jamessearson' class='social-media-anchor' target='_blank')
+								include ./images/icons/svg/footer-media/linkedin.svg
+
+						li.social-connection
+							a(href='https://github.com/jcsearson' class='social-media-anchor' target='_blank')
+								include ./images/icons/svg/footer-media/github.svg
+
+		div(class="colophan" role="contentinfo")
+			div.copyright
+				p &copy; 2015,  Searsino | All Rights Reserved.
+
+include jades/scripts.jade

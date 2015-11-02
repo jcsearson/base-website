@@ -1,0 +1,32 @@
+.git
+.fuse*
+node_modules/*
+.DS_Store
+config.codekit
+*.log
+sitemap.xml
+sitemap.xml.gz
+wp-config.php
+wp-content/advanced-cache.php
+wp-content/backup-db/
+wp-content/backups/
+wp-content/blogs.dir/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/uploads/
+wp-content/wp-cache-config.php
+
+# All additions go below this point
+# Custom Files to Remove in Later Dev Stages
+config.rb
+readme.html
+global-min.js
+.htaccess
+robots.txt
+index.html
+*.css
+css/
+*.min
+*.jpg
+*.jpeg
+*.png
